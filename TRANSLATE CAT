@@ -1,0 +1,4 @@
+
+var translateCat;
+translateCat = 'Кот';
+var wordCat = 'Cat';
