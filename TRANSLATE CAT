@@ -1,4 +1,5 @@
-
 var translateCat;
 translateCat = 'Кот';
 var wordCat = 'Cat';
+window.alert(translateCat);
+window.alert(wordCat);
