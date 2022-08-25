@@ -1,10 +1,18 @@
 Hi <input id = "message" />
 
+<select id="cities">
+    <option>Minsk</option>
+    <option>Warsaw</option>
+    <option>Vilnus</option>
+</select>
 
 <script>
 var msgId = 'message';
 var msgEl = document.getElementById(msgId);
-window.alert(msgEl.id)
+var ctsId = 'cities';
+var ctsEl = document.getElementById(ctsId);
+window.alert(msgEl.id);
+window.alert(ctsEl.id);
 </script>
 
 
