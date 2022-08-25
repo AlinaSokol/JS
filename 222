@@ -1,0 +1,10 @@
+Hi <input id = "message" />
+
+
+<script>
+var msgId = 'message';
+var msgEl = document.getElementById(msgId);
+window.alert(msgEl.id)
+</script>
+
+
