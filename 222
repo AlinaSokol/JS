@@ -1,18 +1,38 @@
-Hi <input id = "message" />
-
+<input value = 'Alina' class = 'oneTwoThree' id = "firstName" />
+<input value = 'Sokol' class = 'oneTwoThree' id = "nickname" />
+<input value = 'Minsk' class = 'oneTwoThree' id = "address" />
 <select id="cities">
     <option>Minsk</option>
     <option>Warsaw</option>
     <option>Vilnus</option>
 </select>
+<textarea id = 'hobbies'>drink and drow</textarea>
+<div id="picture" alt="what is it?"><img src='C:\Users\User GHU\Desktop\viber image 2019-03-05 , 19.19.57.jpg'></div>
 
 <script>
-var msgId = 'message';
-var msgEl = document.getElementById(msgId);
-var ctsId = 'cities';
-var ctsEl = document.getElementById(ctsId);
-window.alert(msgEl.id);
-window.alert(ctsEl.id);
+var fstNameId = 'firstName';
+var nckNameId = 'nickname';
+var addId = 'address';
+var citiesId = 'cities';
+var hobbiesId = 'hobbies';
+var avatarId = 'picture';
+
+var fstNameEl = document.getElementById(fstNameId);
+var nckNameEl = document.getElementById(nckNameId);
+var addEl = document.getElementById(addId);
+var citiesEl = document.getElementById(citiesId);
+var hobbiesEl = document.getElementById(hobbiesId);
+var avatarEl = document.getElementById(avatarId);
+
+window.alert(fstNameEl.value);
+// window.alert(fstNameEl.className);
+// window.alert(nckNameEl.id);
+// window.alert(addEl.id);
+// window.alert(citiesEl.value);
+window.alert(hobbiesEl.innerHTML);
+// window.alert(avatarEl.innerHTML);
+
 </script>
+
 
 
