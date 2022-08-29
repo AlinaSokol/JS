@@ -1,5 +1,5 @@
 var translateCat;
-translateCat = 'Кот';
-var wordCat = 'Cat';
+translateCat = 'Животное';
+var wordCat = 'Animal';
 window.alert(translateCat);
 window.alert(wordCat);
