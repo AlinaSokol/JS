@@ -23,15 +23,32 @@ var addEl = document.getElementById(addId);
 var citiesEl = document.getElementById(citiesId);
 var hobbiesEl = document.getElementById(hobbiesId);
 var avatarEl = document.getElementById(avatarId);
+var list = document.getElementById('list');
+function alertValues(){
+    console.log('3');
+    console.log('2');
+    console.log('1');
+}
+fstNameEl.value = 'Any';
+alertValues();
+nckNameEl.value = 'Little Bird';
+alertValues();
+avatarEl.src = 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fthypix.com%2Fwp-content%2Fuploads%2F2021%2F04%2Fpanda-for-drawing-82-700x700.jpg&imgrefurl=https%3A%2F%2Fthypix.com%2Fru%2Fpanda-kartinki-dlja-srisovki%2F&tbnid=P2HjTi71QhuxwM&vet=12ahUKEwjZztyi_-b5AhUIBRoKHdA5AR0QMygdegUIARCdAg..i&docid=uEL5RKC0EhjyqM&w=700&h=700&q=%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8&ved=2ahUKEwjZztyi_-b5AhUIBRoKHdA5AR0QMygdegUIARCdAg';
+alertValues();
+alertValues();
+avatarEl.title = 'picture';
+alertValues();
+citiesEl.value = 'Vilnus';
+hobbiesEl.value = 'write here';
+    avatarEl.innerHTML = '<ul id="list"><li>1</li><li>11</li></ul>';
 
-window.alert(fstNameEl.value);
-// window.alert(fstNameEl.className);
-// window.alert(nckNameEl.id);
-// window.alert(addEl.id);
-// window.alert(citiesEl.value);
-window.alert(hobbiesEl.innerHTML);
-// window.alert(avatarEl.innerHTML);
-
+// console.log(fstNameEl.value);
+// console.log(fstNameEl.className);
+// console.log(nckNameEl.id);
+// console.log(addEl.id);
+// console.log(citiesEl.value);
+// console.log(hobbiesEl.innerHTML);
+console.log(avatarEl.innerHTML);
 </script>
 
 
