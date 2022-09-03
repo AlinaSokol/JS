@@ -1,15 +1,3 @@
-<input value = 'Alina' class = 'oneTwoThree' id = "firstName" />
-<input value = 'Sokol' class = 'oneTwoThree' id = "nickname" />
-<input value = 'Minsk' class = 'oneTwoThree' id = "address" />
-<select id="cities">
-    <option>Minsk</option>
-    <option>Warsaw</option>
-    <option>Vilnus</option>
-</select>
-<textarea id = 'hobbies'>drink and drow</textarea>
-<div id="picture" alt="what is it?"><img src='C:\Users\User GHU\Desktop\viber image 2019-03-05 , 19.19.57.jpg'></div>
-
-<script>
 var fstNameId = 'firstName';
 var nckNameId = 'nickname';
 var addId = 'address';
@@ -17,29 +5,29 @@ var citiesId = 'cities';
 var hobbiesId = 'hobbies';
 var avatarId = 'picture';
 
+function elValue(elPaarmetr) {
+console.log(elPaarmetr.value);
+}
 var fstNameEl = document.getElementById(fstNameId);
+elValue(fstNameEl);
 var nckNameEl = document.getElementById(nckNameId);
+elValue(nckNameEl);
 var addEl = document.getElementById(addId);
 var citiesEl = document.getElementById(citiesId);
 var hobbiesEl = document.getElementById(hobbiesId);
+elValue(hobbiesEl);
 var avatarEl = document.getElementById(avatarId);
 var list = document.getElementById('list');
-function alertValues(){
-    console.log('3');
-    console.log('2');
-    console.log('1');
-}
+
 fstNameEl.value = 'Any';
-alertValues();
+elValue(fstNameEl);
 nckNameEl.value = 'Little Bird';
-alertValues();
+elValue(nckNameEl);
 avatarEl.src = 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fthypix.com%2Fwp-content%2Fuploads%2F2021%2F04%2Fpanda-for-drawing-82-700x700.jpg&imgrefurl=https%3A%2F%2Fthypix.com%2Fru%2Fpanda-kartinki-dlja-srisovki%2F&tbnid=P2HjTi71QhuxwM&vet=12ahUKEwjZztyi_-b5AhUIBRoKHdA5AR0QMygdegUIARCdAg..i&docid=uEL5RKC0EhjyqM&w=700&h=700&q=%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8&ved=2ahUKEwjZztyi_-b5AhUIBRoKHdA5AR0QMygdegUIARCdAg';
-alertValues();
-alertValues();
 avatarEl.title = 'picture';
-alertValues();
 citiesEl.value = 'Vilnus';
 hobbiesEl.value = 'write here';
+elValue(hobbiesEl);
     avatarEl.innerHTML = '<ul id="list"><li>1</li><li>11</li></ul>';
 
 // console.log(fstNameEl.value);
@@ -48,8 +36,6 @@ hobbiesEl.value = 'write here';
 // console.log(addEl.id);
 // console.log(citiesEl.value);
 // console.log(hobbiesEl.innerHTML);
-console.log(avatarEl.innerHTML);
-</script>
-
+// console.log(avatarEl.innerHTML);
 
 
