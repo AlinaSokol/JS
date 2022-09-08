@@ -1,0 +1,21 @@
+<div class="my-big-calcul" style='width: 500px; margin = 0 auto; text.aling = center;'>
+    <div class="operations-blok">
+        <button>+</button>
+        <button>-</button>
+        <button>*</button>
+        <button>/</button>
+    </div>
+    <div class="seperator">
+        <hr />
+    </div>
+    <div class="inputs-blok">
+        <div class="input-blok">
+            <label>number 1</label>
+            <input type="number">
+        </div>
+        <div class="input-blok">
+            <label>number 2</label>
+            <input type="number">
+        </div>
+    </div>
+</div>
