@@ -61,3 +61,8 @@
         let number2 = Number(input2.value);
         rst3.value = number1 / number2;
     }
+    buttPlus.addEventListener('click', onButtonPlus);
+    buttMinus.addEventListener('click', onButtonMinus);
+    buttMultiply.addEventListener('click', onButtonMultiply);
+    buttDevide.addEventListener('click', onButtonDevide);
+</script>
