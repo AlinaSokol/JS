@@ -23,3 +23,8 @@
         </div>
     </div>
 </div>
+<script>
+    let buttPlus = document.getElementById('buttPlus');
+    let buttMinus = document.getElementById('buttMinus');
+    let buttMultiply = document.getElementById('buttMultiply');
+    let buttDevide = document.getElementById('buttDevide');
