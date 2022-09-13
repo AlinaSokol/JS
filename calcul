@@ -11,11 +11,11 @@
     <div class="inputs-blok"  style='display: block;'>
         <div class='input-blok' style='display: block;'>
             <label style='display: inline-block;'>number 1</label>
-            <input id='number1' type="number">
+            <input id='number1' value='27' type="number">
         </div>
         <div class="input-blok" style='display: block;'>
             <label style='display: inline-block;'>number 2</label>
-            <input id='number2' type="number">
+            <input id='number2' value='3' type="number">
         </div>
         <div class='input-blok' style='display: block;'>
             <label style='display: inline-block;'>result</label>
@@ -28,38 +28,33 @@
     let buttMinus = document.getElementById('buttMinus');
     let buttMultiply = document.getElementById('buttMultiply');
     let buttDevide = document.getElementById('buttDevide');
-    function onButtonPlus() {
         let input1 = document.getElementById('number1');
         let input2 = document.getElementById('number2');
         let rst3 = document.getElementById('result');
         let number1 = Number(input1.value);
         let number2 = Number(input2.value);
-        rst3.value = number1 + number2;
-
+    function makeOperation(operationCode) {
+        if (operationCode === '+') {
+            rst3.value = number1 + number2;
+        } else if (operationCode === '-') {
+            rst3.value = number1 - number2;
+        } else if (operationCode === '*') {
+            rst3.value = number1 * number2;
+        } else if (operationCode === '/') {
+            rst3.value = number1 / number2;
+        }
+    }
+    function onButtonPlus() {
+        makeOperation('+')
     }
     function onButtonMinus() {
-        let input1 = document.getElementById('number1');
-        let input2 = document.getElementById('number2');
-        let rst3 = document.getElementById('result');
-        let number1 = Number(input1.value);
-        let number2 = Number(input2.value);
-        rst3.value = number1 - number2;
+        makeOperation('-')
     }
     function onButtonMultiply() {
-        let input1 = document.getElementById('number1');
-        let input2 = document.getElementById('number2');
-        let rst3 = document.getElementById('result');
-        let number1 = Number(input1.value);
-        let number2 = Number(input2.value);
-        rst3.value = number1 * number2;
+        makeOperation('*')
     }
     function onButtonDevide() {
-        let input1 = document.getElementById('number1');
-        let input2 = document.getElementById('number2');
-        let rst3 = document.getElementById('result');
-        let number1 = Number(input1.value);
-        let number2 = Number(input2.value);
-        rst3.value = number1 / number2;
+        makeOperation('/')
     }
     buttPlus.addEventListener('click', onButtonPlus);
     buttMinus.addEventListener('click', onButtonMinus);
