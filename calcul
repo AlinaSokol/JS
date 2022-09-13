@@ -33,11 +33,6 @@
         let rst3 = document.getElementById('result');
         let number1 = Number(input1.value);
         let number2 = Number(input2.value);
-function onOperatinButClick(eventObject) {
-    let clickElement = eventObject.currentTarget;
-    let operation = clickElement.innerHTML;
-    makeOperation(operation);
-}
 function makeOperation(operationCode) {
         if (operationCode === '+') {
             rst3.value = number1 + number2;
@@ -49,19 +44,11 @@ function makeOperation(operationCode) {
             rst3.value = number1 / number2;
         }
     }   
-
-  //  function onButtonPlus() {
-  //       makeOperation('+')
-  //   }
-  //  function onButtonMinus() {
-   //      makeOperation('-')
-  //   }
-  //   function onButtonMultiply() {
-  //       makeOperation('*')
-  //   }
-  //   function onButtonDevide() {
-    //     makeOperation('/')
-  //   }
+function onOperatinButClick(eventObject) {
+    let clickElement = eventObject.currentTarget;
+    let operation = clickElement.innerHTML;
+    makeOperation(operation);
+}
     buttPlus.addEventListener('click', onOperatinButClick);
     buttMinus.addEventListener('click', onOperatinButClick);
     buttMultiply.addEventListener('click', onOperatinButClick);
